@@ -1,0 +1,194 @@
+/* the following attempts to put all 5+ browsers on the same playing field */
+
+:link,:visited { text-decoration: none }
+h1,h2,h3,h4,h5,h6,pre,code { font-size: 1em; }
+
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input
+{ margin: 0; padding: 0 }
+
+a img,:link img,:visited img { border: none }
+
+:link {
+	font-weight: bold;
+}
+
+a:focus, a:hover, a:active {
+	text-decoration: underline;
+}
+
+address { font-style: normal }
+
+/* end browser affirmative action */
+
+/* clearing */
+	.stretch,
+	.clear {
+		clear:both; 
+		height:1px; 
+		margin:0; 
+		padding:0; 
+		font-size: 15px;
+		line-height: 1px;
+	}
+	.clearfix:after {
+		content: "."; 
+		display: block; 
+		height: 0; 
+		clear: both; 
+		visibility: hidden;
+	}
+	* html>body .clearfix {
+		display: inline-block; 
+		width: 100%;
+	}
+	
+	* html .clearfix {
+		/* Hides from IE-mac \*/
+		height: 1%;
+		/* End hide from IE-mac */
+	}
+/* end clearing */
+
+/* mostly for image handling */
+
+	.left {
+		float: left;
+	}
+	
+	.right {
+		float: right;
+	}
+	
+	img.right {
+		float: right;
+		margin: 0 0 7px 7px;
+	}
+	
+	img.left {
+		float: left;
+		margin: 0 7px 7px 0;
+	}
+
+/* end image handling */
+
+/* replace */
+	.replace {
+		display:block;
+		
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-color:transparent;
+	}
+	/* tidy these up */
+	.replace * {
+		text-indent: -10000px;
+		display:block;
+		
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-color:transparent;
+	}
+	.replace a {
+		text-indent:0;
+	}
+	.replace a span {
+		text-indent:-10000px;
+	}
+/* end replace */
+
+
+/* accessibility */
+     span.accesskey {
+     	text-decoration:none;
+     }
+     .accessibility {
+     	position: absolute;
+     	top: -999em;
+     	left: -999em;
+     }
+/* end accessibility */
+
+/* rounded boxes */
+	/* set background images for corners */
+	.rbroundbox { background: url(/images/simple_background.gif) repeat; }
+	.rbtop div  { background: url(/images/simple_top_left.gif) no-repeat top left; }
+	.rbtop      { background: url(/images/simple_top_right.gif) no-repeat top right; }
+	.rbbot div  { background: url(/images/simple_bottom_left.gif) no-repeat bottom left; }
+	.rbbot      { background: url(/images/simple_bottom_right.gif) no-repeat bottom right; }
+	
+	 /* height and width details */
+	.rbtop div, .rbtop, .rbbot div, .rbbot {
+		width: 100%;
+		height: 14px;
+		font-size: 1px;
+	}
+	.rbcontent  { margin: 0 14px; }
+	.rbroundbox { width: 56em; margin-top: 1.2em;}
+/* end rounded boxes */
+
+body table.largefont th {
+	font-size: 1.2em;
+}
+
+body table.largefont td {
+	padding: 0.5em;
+	font-size: 1em;
+}
+
+.smallfont {
+	font-size: 0.85em;
+}
+
+.highlight {
+	background: #ccc;
+}
+
+.new {
+	padding: 0.1em;
+	font-size: 0.85em;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 1px solid #ff9;
+	background: #ffc;
+	color: red;
+}
+
+.subheadnote {
+	font-size: 0.85em;
+	font-weight: normal;
+	font-style: italic;
+	color: #666;
+}
+
+.imgCaption {
+	font-size: 0.85em;
+	color: #666;
+}
+
+.thumbnail {
+	float: left;
+	width: 204px;	
+	border: 1px solid #ccc;	
+	margin: 0 5px 5px 0;
+	padding: 2px;
+	font-size: 0.90em;
+	color: #464646;
+}
+
+.required {
+    color: #c30;
+    font-weight: bold;
+}
+
+form p span.required {
+    font-size: 0.85em;
+}
+
+code span.note {
+    color: #666;
+    font-style: italic;
+}
+
+code span.optional {
+    color: blue;
+}

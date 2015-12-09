@@ -1,0 +1,36 @@
+.menuStyle {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 12px; PADDING-BOTTOM: 5px; COLOR: #000000; PADDING-TOP: 5px; FONT-FAMILY: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #333366
+}
+#menuHead {
+	Z-INDEX: 50; RIGHT: 35px; BOTTOM: 3px; POSITION: absolute
+}
+#menuHead1 {
+	POSITION: relative
+}
+#menu1 {
+	Z-INDEX: 100; VISIBILITY: hidden; WIDTH: 130px; POSITION: absolute
+}
+#menuHead2 {
+	POSITION: relative
+}
+#menu2 {
+	Z-INDEX: 100; VISIBILITY: hidden; WIDTH: 120px; POSITION: absolute
+}
+#menuHead3 {
+	POSITION: relative
+}
+#menu3 {
+	VISIBILITY: hidden; WIDTH: 100px; POSITION: absolute
+}
+A:link {
+	COLOR: #f00; FONT-FAMILY: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-WEIGHT: bold; COLOR: #f60; FONT-FAMILY: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #f60; FONT-FAMILY: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #999999; FONT-FAMILY: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}

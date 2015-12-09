@@ -1,0 +1,30 @@
+
+/* SITE SPECIFIC LAYOUT */
+    body {
+        background: #ffffff;              
+        text-align: left;
+    }
+    
+    div#page {
+		margin: 1em auto 0 auto;
+		width: 94%;
+		min-width: 40em;
+		max-width: 80em;
+		border: 10px solid #ffffff;
+		border-width: 0 10px;
+		background: #ffffff;
+        text-align: left;
+    }
+
+    .specialbox {
+    }
+
+    .dark {
+ 		background: #d6d6d6;
+		border: 1px solid #d6d6d6;
+		color: #9c0000;
+    }
+
+    .dark * {
+		color: #9c0000;
+    }

@@ -1,0 +1,7 @@
+Erdos number 5 based upon:
+
+Nathan C. Carter, Stephen M. Grimes, and Clifford A. Reiter, Frieze and Wallpaper Chaotic Attractors with a Polar Spin. Computers & Graphics, 22 6(1998) 765-779.
+Sandy D. Balkin, Deborah S. Cousins, Christopher K. Orr, and Clifford A. Reiter, Short Periods of Continued Fraction Convergents Modulo M: a Generalization of the Fibonacci Case, The Fibonacci Quarterly, 33 3 (1995) 222-233.
+Balkin, Sandy D., and Mallows, Colin L.; An Adjusted, Asymmetric Two Sample t-Test; The American Statistician; Volume 55; Number 3; August 2001; pp. 203-206.
+F. R. K. Chung, P. Diaconis, R. L. Graham and C. L. Mallows, On the Permanents of Complements of the Direct Sum of Identity Matrices, Adv. in Applied Mathematics, 2 (1981), pp. 121-137.
+F. R. K. Chung and P. ErdÅˆs, On unavoidable hypergraphs, J. Graph Theory 11 (1987) 251-263.

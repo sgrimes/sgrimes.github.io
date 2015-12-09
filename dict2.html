@@ -1,0 +1,665 @@
+<head>
+
+<script language="Javascript" type="text/javascript" 
+src="http://dict.sztaki.hu//dynapi3x/src/dynapi.js"></script>
+		<script language="Javascript" type="text/javascript">
+		var DynAPI = null;
+</script>
+
+<script type="text/javascript" language="javascript" 
+src="http://dict.sztaki.hu/js/sztaki_origo_2/swfobject.js"></script>	
+		
+<script type="text/javascript" language="JavaScript" 
+src="http://dict.sztaki.hu/js/sztaki_origo_2/virtualKeyboard/css_browser_selector.js"></script>
+
+<script type="text/javascript" language="JavaScript" 
+src="http://dict.sztaki.hu/js/sztaki_origo_2/virtualKeyboard/jquery.js"></script>
+
+<script type="text/javascript" language="JavaScript" 
+src="http://dict.sztaki.hu/js/sztaki_origo_2/virtualKeyboard/tbHandler.js"></script>
+
+<script type="text/javascript" language="JavaScript" 
+src="http://dict.sztaki.hu/js/sztaki_origo_2/virtualKeyboard/virtualKeys.js"></script>
+
+<script type="text/javascript" language="javascript" 
+src="http://dict.sztaki.hu/js/sztaki_origo_2/szotar.js"></script>
+
+
+			
+	
+	<script language="Javascript" type="text/javascript">
+		var szotarBannerIds = new Array();	// ids of banners 
+		var szotarLoadedAdded = false;		// flag to make 
+sure szotarLoaded() is called once
+		var szotarForceBannerWrite = false; // 
+/SomeBrowser/i.test(navigator.userAgent);
+		
+		/*	Add a banner zone with the ID of DOM element where 
+the banner should appear.
+		 */
+		function szotarAddBanner(zone, id)
+		{
+			if (szotarForceBannerWrite) {
+				goAdverticum.addZone(zone);
+				return;
+			}
+			szotarBannerIds[szotarBannerIds.length] = 
+{zone:zone, id:id};			
+		}
+		
+		function szotarLoaded() {	
+			if (arguments.callee.done) return;
+		
+			arguments.callee.done = true;
+			
+			for (i=0; i<szotarBannerIds.length; i++) {
+				if(window.goAdverticum) {
+					
+goAdverticum.addZone(szotarBannerIds[i].zone, {displayOptions: 
+{mode:'dom',type:'js',container:szotarBannerIds[i].id}});
+				}
+			}
+						
+		if (document.addEventListener && 
+!/Opera/i.test(navigator.userAgent) 
+		    && !/WebKit/i.test(navigator.userAgent) && 
+!/KHTML/i.test(navigator.userAgent) ) {
+			document.addEventListener("DOMContentLoaded", 
+szotarLoaded, false);
+			szotarLoadedAdded = true;
+		}
+		
+		/* for Internet Explorer */
+		/*@cc_on @*/
+		/*@if (@_win32)
+		/* pataki@: something is wrong with this. Let's default to 
+dynapi.onLoad() later.
+		if (!szotarLoadedAdded) {
+			document.write("<script id=__ie_onload defer 
+src=javascript:void(0)><\/script>");
+			var script = 
+document.getElementById("__ie_onload");
+			script.onreadystatechange = function() {
+				if (this.readyState == "complete") {
+					szotarLoaded(); // call the onload 
+handler
+				}
+			};
+			szotarLoadedAdded = true;
+		}
+		*/
+		/*@end @*/
+	
+		if (!szotarLoadedAdded && 
+(/WebKit/i.test(navigator.userAgent) || 
+/KHTML/i.test(navigator.userAgent))) { // sniff
+			var _timer = setInterval(function() {
+				if 
+(/loaded|complete/.test(document.readyState)) {
+					clearInterval(_timer);
+					szotarLoaded(); // call the onload 
+handler
+				}
+			}, 10);
+			szotarLoadedAdded = true;
+		}
+	
+		/* for other browsers a dynapi.onLoad(), which is more or 
+less the same as window.onload */
+		if (!szotarLoadedAdded) {
+			dynapi.onLoad(szotarLoaded);
+			szotarLoadedAdded = true;
+		}
+	</script>	
+	
+
+
+
+</head>
+
+
+
+<h1>Hungarian computational linguistics tools:</h1>
+
+<ul><li>
+<h3><a href="http://morphologic.hu">Morphologic</a> translator:</h3>
+
+
+<!-- [468x60] webforditas.hu box begin -->
+<div class='boxContainer' style='width:468px; height:60px'>
+<script type='text/javascript' 
+src='http://www.webforditas.hu/imports/functions.js'></script>
+<link href="http://www.webforditas.hu/boxes/imports/box_styles.css" 
+rel="stylesheet" type="text/css">
+<script type='text/javascript' 
+src='http://www.webforditas.hu/boxes/imports/box_functions.js'></script>
+<script type='text/javascript' 
+src='http://www.webforditas.hu/boxes/imports/box_english.js'></script>
+<table width='468' border='0' cellpadding='0' cellspacing='0'>
+<tr>
+  <td width='268' align='center' valign='middle'>
+    <table border='0' cellpadding='0' cellspacing='0'>
+    <tr>
+      <td height='19'><a href='http://www.morphologic.hu' 
+target='_blank'><img width='21' height='17' 
+src='http://www.webforditas.hu/boxes/images/ml_logo.gif' border='0' 
+alt='morphologic'></a></td>
+      <td width='5'></td>
+      <td><a href='http://www.morphologic.hu' target='_blank'><img 
+width='116' height='17' 
+src='http://www.webforditas.hu/boxes/images/ml_text.gif' border='0' 
+alt='morphologic'></a></td>
+    </tr>
+    </table>
+  </td>
+  <td width='200'>
+    <div id='boxTabs'></div>
+    <script 
+type='text/javascript'>drawBoxTabs(document.getElementById('boxTabs'));</script>
+  </td>
+</tr>
+<tr>
+  <td colspan='2' height='41' class='boxTabGradientTD' valign='top'>
+    <table width='100%' border='0' cellpadding='0' cellspacing='0'>
+    <tr><td colspan='3' height='10'></td></tr>
+    <tr>
+      <td width='4'></td>
+      <td width='460'>
+        <div id='webTab'>
+        <form id='webTabForm' action='http://www.webforditas.hu/index.php' 
+method='post' target='_blank'>
+        <table width='100%' border='0' cellpadding='0' cellspacing='0'>
+        <tr>
+          <td width='100%' valign='middle'>
+            <input type='text' name='url' class='boxInput' 
+style='display:inline; width:100%; height:21px; overflow:auto' 
+value='http://'>
+          </td>
+          <td><div style='width:5px'></div></td>
+          <td valign='middle'>
+            <script 
+type='text/javascript'>drawLangPairs('trlang');</script>            
+          </td>
+          <td><div style='width:5px'></div></td>
+          <td valign='middle'>
+            <script type='text/javascript'>drawSubmitButton();</script>
+          </td>
+        </tr>
+        </table>
+        <input type='hidden' name='show' value='webTab'>
+        <script type='text/javascript'>drawRandom();</script>            
+        </form>  
+        </div>
+        <div id='textTab'>
+        <form id='textTabForm' 
+action='http://www.webforditas.hu/index.php' method='post' 
+target='_blank'>
+        <table width='100%' border='0' cellpadding='0' cellspacing='0'>
+        <tr>
+          <td width='100%' valign='middle'>
+            <input type='text' name='input' class='boxInput' 
+style='display:inline; width:100%; height:21px; overflow:auto'>
+          </td>
+          <td><div style='width:5px'></div></td>
+          <td valign='middle'>
+            <script 
+type='text/javascript'>drawLangPairs('trlang');</script>            
+          </td>
+          <td><div style='width:5px'></div></td>
+          <td valign='middle'>
+            <script type='text/javascript'>drawSubmitButton();</script>
+          </td>
+        </tr>
+        </table>
+        <input type='hidden' name='show' value='textTab'>
+        <script type='text/javascript'>drawRandom();</script>            
+        </form>  
+        </div>
+        <div id='dictTab'>
+        <form id='dictTabForm' 
+action='http://www.webforditas.hu/index.php' method='post' 
+target='_blank'>
+        <table width='100%' border='0' cellpadding='0' cellspacing='0'>
+        <tr>
+          <td width='100%' valign='middle'>
+            <input type='text' name='S' class='boxInput' 
+style='display:inline; width:100%; height:21px; overflow:auto'>
+          </td>
+          <td><div style='width:5px'></div></td>
+          <td valign='middle'>
+            <script type='text/javascript'>drawLangFrom('L1');</script>            
+          </td>
+          <td><div style='width:5px'></div></td>
+          <td valign='middle'>
+            <script type='text/javascript'>drawLangTo('L2');</script>            
+          </td>
+          <td><div style='width:5px'></div></td>
+          <td valign='middle'>
+            <script type='text/javascript'>drawSubmitButton();</script>
+          </td>
+        </tr>
+        </table>
+        <input type='hidden' name='show' value='dictTab'>
+        <script type='text/javascript'>drawRandom();</script>            
+        </form>
+        </div>
+      </td>
+      <td width='4'></td>
+    </tr>
+    </table>
+  </td>
+</tr>
+</table>
+</div>
+<!-- [468x60] webforditas.hu box end -->
+
+<p>
+<li><h3><a 
+href="http://szotar.mokk.bme.hu/hunglish/search/corpus">Hunglish</a> 
+Corpus:</h3>
+
+<img src="http://mokk.bme.hu/logo.jpg"> <img 
+src="http://www.nytud.hu/images/title.gif"> <p> 
+
+<form>
+Hungarian:
+<input type="text" value="" name="ql"/>
+English:
+<input type="text" value="" name="qr"/>
+
+<SELECT NAME="source">
+<option value="all">all
+</SELECT>
+<input type="button" onclick="ql.value=''; qr.value=''" value="reset" />
+<input type="submit" value="search"/>
+</form>
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><h3><a 
+href="http://fonetika.nytud.hu/hitint/">Hangidotartam</a> Database 
+of speech segment duration</a></h3>
+
+
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function inditApp(word) 
+{
+var w =window.open("hallg.php?wid=" + word, "cd", 
+"scrollbars=no,toolbar=0,location=0,directories=0,status=0,menubar=0,resizable=1,width=790,height=400");
+w.focus();
+}
+//-->
+</script>
+
+
+<style type="text/css">
+<!--
+.style1 {font-size: 12px}
+-->
+</style>
+</head>
+
+<form name="search_form" method="get" 
+action="http://fonetika.nytud.hu/hitint/index.php">
+  <input name="offset" type="hidden" value="0">  
+  <input name="hl" type="hidden" value=""> 
+    
+
+<table width="790" border="0" cellpadding="3" cellspacing="0"><tr><td 
+valign="top">
+  <table width="590" border="1" cellpadding="0" cellspacing="0" 
+style="BORDER-COLLAPSE: collapse">
+    <tr> 
+      <td bgcolor="#E7EEEF"> 
+      <p class="table-title">&#187; Search</p>      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#fbfbfb">
+<table width="100%" border="0" cellpadding="2" cellspacing="2">
+
+          <tr bgcolor="#fbfbfb"> 
+            <td width="120" class="table-btext" align="left" 
+valign="top">Desired word:</td>
+            <td colspan="3" align="left" valign="top"> <input name="word" 
+type="text" value="" size="35" maxlength="120"> 
+              <input type="submit" name="Submit" value="Search"> </td>
+            <td rowspan="4" align="left" valign="top" 
+class="table-btext"><table cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td class="table-stext" 
+colspan="2">
+Valid characters:</td>
+
+                </tr>
+                <tr> 
+                  <td width="25">&nbsp;</td>
+                  <td class="table-stext">&#8226; Hungarian letters</td>
+                </tr>
+                <tr> 
+                  <td width="25">&nbsp;</td>
+
+                  <td class="table-stext">
+&#8226; 
+* - wildcard 
+for multiple characters</td>
+                </tr>
+                <tr> 
+                  <td width="25">&nbsp;</td>
+                  <td class="table-stext">&#8226; ? - one optional 
+character</td>
+
+                </tr>
+              </table></td>
+          </tr>
+          <tr bgcolor="#fbfbfb"> 
+            <td  class="table-stext" 
+colspan="4">Display: <select name="num">
+                <option selected>5</option>
+                <option >10</option>
+
+                <option >20</option>
+                <option >30</option>
+                <option >50</option>
+              </select>
+              results &nbsp; <input name="hall" type="checkbox" id="hall3" 
+value="checkbox" >
+              Only return results containing audio</td>
+
+          </tr>        </table>      </td>    </tr>  </table>
+  </td></td></tr>  </table>  </td>  </tr></table></form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><h3><a href="http://dict.sztaki.hu/magyar-angol">MTA Sztaki</a> 
+Online Dictionary</h3>
+
+<script type="text/javascript">
+	if (DynAPI) {
+		dynapi.document.insertAllChildren();
+	}
+</script>
+
+<div id="dict-header">
+
+<img src="http://dict.sztaki.hu/images/sztaki_origo_2/gfx/origo_sztaki_szotar_logo2.gif" 
+alt="[origo] SZTAKI Szótár">
+
+<script type="text/javascript"  language="JavaScript">
+document.write('<!--Medián WebAudit SZTAKI szótár Angol-magyar szótár 
+1/2--><img 
+src="http://audit.median.hu/cgi-bin/track.cgi?uc=11441639549075&amp;dc=1&amp;ui='+same+'"  
+alt="@@@alt" width="1" height="1">');
+
+</script>
+<noscript>
+<!--Medián WebAudit SZTAKI szótár Angol-magyar szótár 1/2-->
+<img 
+src="http://audit.median.hu/cgi-bin/track.cgi?uc=11441639549075&amp;dc=1" 
+alt="@@@alt" width="1" height="1" />
+</noscript>
+	
+</div>
+
+<div id="main_container_holy">
+	<div id="main_center_holy" class="column">
+	<div id="content" >
+					<div id="search-box">
+				<div id="search-box-form">
+	<script language="JavaScript" type="text/javascript">
+<!--
+
+var from_lang = "HUN"
+var from_text = "Magyar"
+var from_lang_pref = "hu"
+var to_lang = "ENG"
+var to_text = "Angol"
+var to_lang_pref = "en"
+var out_lang = "hu"
+var dict_id = "EngHunDict"
+var images_dir = 
+"http://dict.sztaki.hu/images/sztaki_origo_2"
+var vk_state = ""
+var vk_no_special_chars_msg = "Nincsenek speciális betu"k"
+function changeDirection(tag) {
+	var form = document.forms.search;
+	if (!tag)
+		tag = document.getElementById("dir_link");
+	x = from_lang_pref;
+	from_lang_pref = to_lang_pref;
+	to_lang_pref = x;
+	x = from_lang;
+	from_lang = to_lang;
+	to_lang = x;
+	form_val = from_lang + ":" + to_lang + ":" + dict_id;
+	x = from_text;
+	from_text = to_text;
+	to_text = x;
+	tag.innerHTML = from_text+"-&gt;"+to_text
+	form.L.value = form_val;
+	selectWordInField();
+	changeVirtualKeyboard(from_lang);
+	return false;
+}
+//-->
+</script>
+<!-- form eleje -->
+	<form name="search" method="get" 
+action="http://dict.sztaki.hu/dict_search.php" 
+onsubmit="submitForm(); return false;">
+<input 
+type="hidden" name="L" value="HUN:ENG:EngHunDict" />
+				<input type="hidden" name="O" value="HUN" 
+/>
+		<input type="hidden" name="flash" value="" />
+		<input type="hidden" name="E" value="1" />
+		<input type="hidden" name="sid" 
+value="3eb06e1a9c57d9879451f38308c2c437" />
+		<input type="hidden" name="vk" id="vk" value="" />
+		
+						<input type="hidden" 
+name="in_form" value="1" />
+
+		<fieldset>
+
+						<a class="direction" 
+id="dir_link" 
+href="/dict_search.php?L=HUN%3AENG%3AEngHunDict&M=1&E=1&C=1&A=1&S=H&T=1&D=0&G=0&P=0&MR=100&sid=3eb06e1a9c57d9879451f38308c2c437&O=HUN&F=0&start=1&L=ENG%3AHUN%3AEngHunDict&frame=lower" 
+onclick="return changeDirection(this)">Hungarian-&gt;English</a>
+						
+															
+
+										
+			<table>
+			<tr>
+				<td class="col1">
+
+				<div id="searchButton">
+					<img id="vkImgHidden" 
+src="http://dict.sztaki.hu/js/sztaki_origo_2/virtualKeyboard/transVk.gif" 
+onmouseover="document.getElementById('vkImgHidden').src='http://dict.sztaki.hu/js/sztaki_origo_2/virtualKeyboard/vk.gif'" 
+onmouseout="document.getElementById('vkImgHidden').src='http://dict.sztaki.hu/js/sztaki_origo_2/virtualKeyboard/transVk.gif'"/>
+					<img id="vkImgVisible" 
+src="http://dict.sztaki.hu/js/sztaki_origo_2/virtualKeyboard/vk.gif" 
+style="display:none"/>
+
+				</div>
+
+				<input class="text" type="text" name="W"  
+id="searchBox" value="" />
+				<br id="breakBelowSearchBox" />
+				<img id="imgClose" 
+src="http://dict.sztaki.hu/js/sztaki_origo_2/virtualKeyboard/x.gif" 
+style="display:none">
+				<div id="virtualKeyboard" 
+style="display:none">
+				</div>
+				
+				</td>
+
+				<td class="col2"  colspan='2'>				
+				<span class="buttons">
+
+					<span class="button 
+search-button"><span class="icon"><input type="image" class="image" 
+src="http://dict.sztaki.hu/images/sztaki_origo_2/dict_play4.png" 
+alt="Keresés" width="17" 
+height="22" name="play" /></span><a class="icon button-label" href="#" 
+onclick="return submitForm()"><label>Search</label></a></span>
+					<span class="button add-button"><a 
+href="add_word.php" class="icon button-label"><span class="icon"><img 
+class="image" 
+src="http://dict.sztaki.hu/images/sztaki_origo_2/dict_add3.png" 
+alt="add" width="19" height="22" name="add" 
+/></span><label>New Word</label></a></span>
+				</span>				
+								</td>
+							</tr>
+			<tr>
+				<td class="col1">									
+					<select name="M" size="1" 
+id="findSelect">
+
+						<option  value="2">
+							any 
+partial matches</option>
+						<option 
+selected="selected" value="1">
+									
+word prefixes only</option>
+						<option  value="0">
+									
+whole words only</option>
+						<option  value="3">
+
+									
+full matches</option>
+											
+</select>
+				<br class="noshow" />
+								<select 
+name="P" size="1" tabindex="9">
+					<option selected="selected" 
+value="0">
+							no 
+pronunciation</option>
+																		
+<option  value="2">
+									
+popup pronunciation</option>
+
+												
+<option  value="1">
+								
+inline pronunciation</option>
+														
+</select>
+				
+
+												
+</td>
+
+				<td class="col2">
+					<ul>
+						<li><input 
+class="checkbox" type="checkbox" checked="checked" name="C" value="1" 
+tabindex="5"  />
+						<a onclick="return 
+switchCheck('C')" onmouseover="return 
+clearStatus('C')"><label>Ignore Case</label></a></li>
+
+	
+						<li><input 
+class="checkbox" type="checkbox" checked="checked" name="A" value="1" 
+tabindex="5" />
+						<a onclick="return 
+switchCheck('A')" onmouseover="return 
+clearStatus('A')"><label>Ignore Accents</label></a></li>
+	
+						<li><input 
+class="checkbox" type="checkbox" checked="checked" name="T" value="1" 
+tabindex="5"  />
+						<a onclick="return 
+switchCheck('T')" onmouseover="return 
+clearStatus('T')"><label>Use Tables</label></a></li>
+						                    </ul>
+                    
+				</td>
+
+			</tr>
+			</table>
+		</fieldset>
+    </form>
+<script language="JavaScript" type="text/javascript">
+<!--
+if(typeof(from_lang) != "undefined") {
+	initVirtualKeyboard(from_lang, vk_state);
+}
+selectWordInField();
+
+//-->
+</script>
+
+
+<!-- form vege --></div> <!-- search-box-form -->
+			</div>	
+						
+		
+	
+<script type="text/javascript">
+function m_popupImage(file, width, height, name, scrollable)
+{
+	if (scrollable != null)
+		scrollable = 1
+	else
+		scrollable = 0
+	if (scrollable)
+		width += 20
+	var xPos = (screen.availWidth / 2) - (width / 2);
+	var yPos = (screen.availHeight / 2) - (height / 2) - 20;
+	kepablak 
+=window.open('',name,'top='+yPos+',left='+xPos+',toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars='+scrollable+',resizable='+scrollable+',width='+width+',height='+height);
+	kepablak.document.open();
+	
+kepablak.document.write("<html><head><title>"+file+"</title></head><body 
+bgcolor='#FFFFFF'>");
+	kepablak.document.write("<a href='javascript:window.close()'><img 
+src='"+file+"' border='0' alt='Bezár'></a>");
+	kepablak.document.write("</body></html>");
+	kepablak.document.close();
+	return false;
+}
+</script>
+
+	
+

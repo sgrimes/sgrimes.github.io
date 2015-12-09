@@ -1,0 +1,41 @@
+Vowels		Featural description
+a		short, back, low, rounded
+e		short, front, mid, unrounded
+i 		short, front, high, unrounded
+o		short, back, mid, rounded
+u		short, back, high, rounded
+w		short, front, mid, rounded
+y		short, front, high, rounded
+A		long, back, low, unrounded
+E		long, front, mid, unrounded
+I		long, front, high, unrounded
+O		long, back, mid, rounded
+U		long, back, high, rounded
+W		long, front, mid, rounded
+Y		long, front, high, rounded
+
+Consonants	Comment
+b
+c		voiceless alveolar affricate [ts]
+d
+f
+g
+h
+j	
+k
+l
+m
+n
+p
+r
+s		voiceless postalveolar fricate (english "sh")
+t
+v
+z
+C		voiceless postalveolar affricate (english "ch")
+G		voiced palatal alveolar, written 'gy'
+N		palatal nasal, written 'ny'
+S		voiceless alveolar fricative [s], written 'sz'
+T		voiceless palatal alveolar, written 'ty'
+Z		voiced postalveolar fricate, written 'zs'
+D 		voiced alveolar affricate, written 'dz'

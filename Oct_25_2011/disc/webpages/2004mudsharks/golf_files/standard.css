@@ -1,0 +1,15 @@
+#heading {
+	FONT-SIZE: 24px; LEFT: 10px; COLOR: #ff9900; FONT-FAMILY: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; POSITION: absolute; TOP: 10px
+}
+#news {
+	FONT-SIZE: 12px; COLOR: #ff9900; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+#content {
+	LEFT: 10px; WIDTH: 400px; POSITION: absolute; TOP: 45px
+}
+#contentWide {
+	LEFT: 10px; WIDTH: 650px; POSITION: absolute; TOP: 45px
+}
+BODY {
+	COLOR: #fff; FONT-FAMILY: "Trebuchet MS", Arial, Helvetica, Geneva, sans-serif; BACKGROUND-COLOR: #000066
+}

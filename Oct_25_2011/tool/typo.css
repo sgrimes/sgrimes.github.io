@@ -1,0 +1,198 @@
+
+/* TYPOGRAPHY */
+	body {
+		text-align: left;
+		font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 76%;
+        line-height: 1em;
+		color: #333;
+	}
+	div {
+		font-size: 1em;
+	}
+	img {
+		border: 0;
+	}
+	
+/* LINKS */
+	a:link {
+		color: blue;
+		font-weight: bold;
+	}
+	a:visited {
+		color: purple;
+	}
+	a:hover {
+        color: black;
+		text-decoration: underline;
+	}
+	a:active, a.active {
+        color: black;
+	}
+/* END LINKS */
+	
+/* HEADINGS */
+	h1 {
+		font-size: 2em;
+		font-weight: normal;
+		line-height: 1.5em;
+		margin: 0 0 0.5em 0;
+		padding: 0;
+        color: black;
+	}
+	h2 {
+		font-size: 1.75em;
+		font-weight: normal;		
+        line-height: 1.4em;
+		margin: 0 0 0.5em 0;
+		padding: 0;
+        color: black;
+	}
+	h3 {
+		font-size: 1.3em;
+		font-weight: bold;		
+		line-height: 1.3em;
+		margin: 0 0 0.5em 0;
+		padding:0;
+        color: black;
+	}
+	h4 {
+		font-size: 1.2em;
+		font-weight: bold;		
+		line-height: 1.3em;
+		margin: 0 0 0.25em 0;
+		padding: 0;
+        color: black;
+	}
+	h5 {
+		font-size: 1.1em;
+		font-weight: bold;		
+		line-height: 1.3em;
+		margin: 0 0 0.25em 0;
+		padding: 0;
+        color: black;
+	}
+	h6 {
+		font-size: 1em;
+		font-weight: bold;		
+		line-height: 1.3em;
+		margin: 0 0 0.25em 0;
+		padding: 0;
+        color: black;
+	}
+/* END HEADINGS */
+
+/* TEXT */
+	p {
+		font-size: 1em;
+		margin: 0 0 1.5em 0;
+		padding: 0;
+		line-height:1.4em;
+	}
+	blockquote {
+		border-left:10px solid #ddd;
+		margin-left:10px;
+		padding-left:10px;
+	}
+	pre {
+		font-family: monospace;
+		font-size: 1.2em;
+	}
+	strong, b {
+		font-weight: bold;
+	}
+	em, i {
+		font-style:italic;
+	}
+    code {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 1.2em;
+        line-height: 1em;
+        white-space: pre;
+    }
+/* END TEXT */
+	
+/* LISTS */
+	ul {
+		font-size: 1.0em;	
+        line-height:1.4em;
+		margin: 0 0 1.5em 0;
+		padding: 0;
+	}
+	ul li {
+		font-size: 1.0em;	
+		margin: 0 0 0.3em 2em;
+		padding: 0;
+	}	
+	ol {
+		font-size: 1.0em;
+		line-height: 1.4em;
+		margin: 0 0 1.5em 0;
+		padding: 0;
+	}
+	ol li {
+		font-size: 1.0em;
+		margin: 0 0 0.3em 2em;
+		padding: 0;
+	}
+	ul ul, ol ol{
+		font-size: 1.0em;	
+		margin: 0.5em 0 0.5em 1em;
+		padding: 0;
+	}	
+	dl {
+		margin: 0 0 1.5em 0;
+		padding: 0;
+		line-height: 1.4em;
+	}
+	dl dt {
+		font-size: 1.25em;
+		font-weight: bold;
+		margin: 0.25em 0 0.25em 0;
+		padding: 0;
+	}
+	dl dd {
+		margin: 0 0 0 30px;
+		padding: 0;
+	}
+	dl dd p {
+		margin: 0 0 1em 0;
+		padding: 0;
+	}
+	
+/* END LISTS */
+	
+	
+/* TABLE */
+	table {
+        font-size: 1em;
+		margin: 0 0 1.5em 0;
+        padding: 0;
+	}
+	table caption {
+		font-weight: bold;
+		margin: 0 0 0 0;
+		padding: 0 0 1.5em 0;
+	}
+	th {
+		font-weight: bold;
+		text-align: left;
+	}
+	td {
+		font-size: 1em;
+	}
+	tr, td {
+		border: 1px solid #767676;
+	}
+/* END TABLE */	
+	
+	hr {
+		display: none;
+	}
+	div.hr {
+		height: 1px;
+		margin: 1.5em 10px;
+		border-bottom: 1px dotted black;
+	}
+	
+/* END TYPOGRAPHY */	
