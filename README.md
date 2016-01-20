@@ -1,4 +1,4 @@
 sgrimes.github.io
 =================
 
-github.io personal site
+https://sgrimes.github.io is personal site for Stephen Grimes.
